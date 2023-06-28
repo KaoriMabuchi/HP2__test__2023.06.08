@@ -1,0 +1,136 @@
+.service-wrap__txt {
+  color: #666;
+  margin-bottom: 2.5rem;
+}
+
+.__intro1 {
+  margin-bottom: 5rem;
+}
+
+
+/* 事例紹介 */
+.service-wrap__intro__block__ttl {
+  margin-bottom: 4.375rem;
+}
+
+.service-wrap__intro__block__ttl h3 {
+  font-size: 1.5rem;
+  color: #0072C6;
+  font-weight: bold;
+  line-height: 1.958;
+  border-bottom: solid 1px #A0A0A0;
+}
+
+.service-wrap__intro__block__in {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.service-wrap__intro__block__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-wrap__intro__block__list__item {
+  box-sizing: border-box; /*ボックスのサイズはコンテンツ、ボーダー、パディングのサイズの合計になります*/
+  /*width: 18.75rem; レスポンシブ対応するため％へ変更*/
+  width: 29%;
+}
+
+.service-wrap__intro__block__list__item__in {
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 14px;
+  background: #fff;
+}
+
+.service-wrap__intro__block__list__item__img {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.service-wrap__intro__block__list__item__img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top; /* 隙間なくす */
+  
+}
+
+/*.service-wrap__intro__block__list__item__txt {
+  /*line-height: 1.437;*/
+  /* 親要素に高さline-heightをすると要素からはみ出す原因になる */
+
+
+.intro-category {
+  margin-bottom: 10px;
+  /*line-height: 1.437;*/
+}
+
+.intro-category span{/*span*/
+  color: #fff;
+  background: #0072C6;
+  padding: 5px;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  
+}
+
+.intro-name {
+  color: #0072C6;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.437;
+}
+
+.intro-details {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.437;
+}
+
+.intro-details:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* レスポンシブ対応 --tab-- */
+
+@media screen and (max-width: 768px) {
+  .service-wrap__intro__block__list__item {
+      box-sizing: border-box;      
+      width: 18.75rem;
+      margin-bottom: 15px;
+    }
+  
+  .service-wrap__intro__block__list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-wrap__intro__block__in {
+    width: 100%;
+  }
+  
+  .__intro1 {
+    margin-bottom: 4.375rem;
+  }
+}
+
+
+/* レスポンシブ対応 --sp-- */
+@media screen and (max-width: 480px) {
+  .service-wrap__intro__block__list {
+    justify-content: center;
+  }
+
+  .service-wrap__intro__block__ttl {
+    margin-bottom: 2.5rem;
+  }
+
+  .__intro1 {
+    margin-bottom: 2.81rem;
+  }
+}

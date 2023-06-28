@@ -1,0 +1,279 @@
+.message {
+  position: relative;
+}
+
+.message::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/1-10.about.png) center/cover no-repeat;
+  opacity: 0.6;
+}
+
+.message-wrap__block__box {
+  background: #fff;
+  padding: 61px 64px;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 80.5%;
+  margin: 0 auto;
+}
+
+.message-wrap__block__box__img {
+  margin-bottom: 1.25rem;
+}
+
+.message-wrap__block__box__img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.message-wrap__block__ttl {
+  color: #0072C6;
+  font-size: clamp(1.375rem, 1.875rem, 2.125rem);
+  /*font-size: 2.125rem;*/
+  font-weight: bold;
+  line-height: 1.437;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.message-wrap__block__ttl span {
+  display: inline-block;
+}
+
+.message-wrap__block__sub {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: bold;
+  line-height: 1.66;
+  margin-bottom: 1.25rem;
+}
+
+.message-wrap__block__txt {
+  font-size: clamp(0.875rem, 1.8vw, 1rem);
+}
+
+
+/* 会社概要 */
+/* 表 */
+.outline-table {
+  width: 73.7%;
+  margin: 0 auto;
+  border: solid 1px #D1D3D4;
+  border-collapse: collapse; /*ボーダーコラプラス　テーブル全体や各セルのボーダーを重ねて表示*/
+  box-sizing: border-box;
+}
+
+.outline-table-th, .outline-table-td {
+  border: solid 1px #D1D3D4;
+}
+
+.outline-table-th {
+  font-size: clamp(1rem, 2.4vw, 1.1875rem);
+  font-weight: bold;
+  line-height: 1.437;
+  padding: 24px 0 24px 20px;
+  text-align: start;
+  background: #F5F5F5;
+}
+
+.outline-table-td {
+  font-size: clamp(1rem, 2.4vw, 1.1875rem);
+  line-height: 1.421;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+
+/* 経営理念 */
+.philosophy {
+  background: #C6E7FF;
+}
+
+.philosophy-wrap__block__box {
+  background: #fff;
+  padding: 4.6% 5.2%;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 80.5%;
+  margin: 0 auto;
+}
+
+.philosophy-wrap__block__ttl {
+  color: #0072C6;
+  font-size: clamp(1.375rem, 3.1vw, 1.5rem);
+  line-height: 1.437;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+
+.philosophy-wrap__block__ttl span {
+  display: inline-block;
+}
+
+/*.philosophy-wrap__block__details {
+  margin: 0 auto;
+  
+}*/
+
+.philosophy-wrap__block__txt {
+  /*padding-left: 50px;*/
+  font-size: clamp(1rem, 2.6vw, 1.375rem);
+  line-height: 1.437;
+  margin-bottom: 2.1875rem;
+  text-align: center;
+}
+
+.philosophy-wrap__block__txt:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy-wrap__block__box__txt ol {
+  /*list-style: none;*/
+  list-style-type: decimal-leading-zero;
+  /*box-sizing: border-box;*/
+}
+
+.philosophy-wrap__block__txt {
+  counter-increment: listVision;
+}
+
+.philosophy-wrap__block__txt::before {
+  content: counter(listVision, decimal-leading-zero);
+  font-size: 1.5rem;
+  color: #0088EA;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+
+/* 地図 */
+.access-wrap__map {
+  width: 86.8%;
+  margin: 0 auto;
+}
+
+.access-wrap__map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.access-wrap__map__block {
+  width: 47%;
+  
+}
+
+.access-wrap__map__block iframe {
+  width: 100%;
+}
+
+.access-wrap__map__block__1 {
+  margin-bottom: 2.5rem;
+}
+
+.access-wrap__map__block__1:nth-of-type(2){
+  margin-bottom: unset;
+}
+
+.access-wrap__map__block__1__ttl {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.access-wrap__map__block__1__txt {
+  font-size: 1.1875rem;
+  line-height: 1.42;
+}
+
+
+/* レスポンシブ対応 --tab-- */ 
+@media screen and (max-width: 768px) {
+  .message-wrap__block__box {
+    width: 100%;
+    padding: 42px 31px;
+  }
+
+  .outline-table {
+    width: 100%;
+  }
+
+  .philosophy-wrap__block__box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .access-wrap__map {
+    flex-direction: column;
+  }
+
+  .access-wrap__map {
+    width: 100%;
+  }
+
+  .access-wrap__map__block {
+    width: 100%;
+  }
+}
+
+
+/* レスポンシブ対応 --sp-- */
+@media screen and (max-width: 480px) {
+  .message-wrap__block__box {
+    padding: 20px;
+  }
+
+  .message-wrap__block__ttl {
+    font-size: clamp(1.06rem, 4.25vw ,1.375rem);
+  }
+
+  .philosophy-wrap__block__txt::before {
+    font-size: 1.1rem;
+    padding-right: 5px;
+  }
+
+  .philosophy-wrap__block__ttl {
+    margin-bottom: 1.875rem;
+    text-align: start;
+  }
+
+  .philosophy-wrap__block__txt {
+    margin-bottom: 0.93rem;
+  }
+}
+
+
+/* レスポンシブ対応 --sp 320-- */
+@media screen and (max-width: 320px) {
+  .message-wrap__block__box {
+    padding: 10px;
+    letter-spacing: 0;
+  }
+
+  .philosophy-wrap__block__txt::before {
+    font-size: 1rem;
+  }
+
+  .philosophy-wrap__block__ttl {
+    font-size: clamp(1rem, 4.25vw, 1.375rem);
+    letter-spacing: 0;
+  }
+
+  .philosophy-wrap__block__box {
+    padding: 10px;
+  }
+
+  .access-wrap__map__block__1__txt {
+    font-size: 1rem;
+  }
+}
+
+
+

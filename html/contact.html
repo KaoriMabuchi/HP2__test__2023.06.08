@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sunsphere -HP② test-</title>
+    <meta name="description" content="【Sunsphere(サンスフィア)】太陽による快適でクリーンな暮らしをすべての人に。太陽光発電システムのサンスフィア。">
+    <meta name="keywords" content="太陽光,太陽光発電,ソーラーパネル,環境">
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OGP SNSでシェアしたとき正しく表示 -->
+    <meta property="og:url" content="https://twitter.com/kaori_mbc">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sunsphere -HP② test-">
+    <meta property="og:description" content="【Sunsphere(サンスフィア)】太陽による快適でクリーンな暮らしをすべての人に。太陽光発電システムのサンスフィア。">
+    <meta property="og:site_name" content="Sunsphere">
+    <meta property="og:image" content="https://twitter.com/kaori_mbc">
+    <!-- ICON -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180×180" href="img/logo.png">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common1.css">
+    <link rel="stylesheet" type="text/css" href="../css/common2.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+  
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="header-wrap">
+        <a href="../index.html" class="header-wrap__logo">
+          <img src="../img/0.logo.png" alt="ロゴ画像">
+        </a>
+    
+        <nav class="header-wrap__nav">
+          <ul class="header-wrap__nav__list">
+            <li class="header-wrap__nav__list__item">
+              <a href="service.html"><span>service</span>事業内容</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="about.html"><span>about</span>会社概要</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="news.html"><span>news</span>お知らせ</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="contact.html"><span>contact</span>お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    
+      <!-- ハンバーガーメニュー -->
+      <div class="drawer"></div>
+    
+    </header>
+
+    <main>
+      <!-- top -->
+      <section class="top" id="top">
+        <div class="top-wrap">
+          <p class="top-wrap__ttl"><small>お問い合わせ</small>Contact</p>
+        </div>
+      </section>
+      
+      <!-- パンくずリスト -->
+      <section class="breadcrumb" id="breadcrumb">
+        <div class="breadcrumb-wrap">
+          <ul class="breadcrumb-wrap__list">
+            <li class="breadcrumb-wrap__list__item">
+              <a href="../index.html"><span>HOME</span></a>
+            </li>
+            <li class="breadcrumb-wrap__list__item">
+              <a href="contact.html"><span class="b-color">Contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact-wrap inner">
+          <!-- タイトル -->
+          <div class="contact-wrap__ttl ttl-wrap">
+            <h2 class="ttl"><small>Contact</small></h2>
+          </div>
+
+          <!-- テキスト -->
+          <div class="contact-wrap__txt">
+            <p>
+              太陽光発電システムの購入、商品について、技術的な質問、<br>
+              その他のお問い合わせ については下記フォームよりお問い合わせください。<br>
+              ご質問の内容によっては、 ご回答に数日要する場合がございます。<br>
+              あらかじめご了承ください。
+            </p>
+          </div>
+
+          <!-- 問合せフォーム -->
+          <form action="#" class="contact_wrap__form" id="form">
+            <!-- セレクトボックス -->
+            <div class="contact_wrap__form__box">
+              <label for="name" class="contact_wrap__form__box__ttl">お問い合わせ項目</label>
+              <select name="お問い合わせ項目" required="required" class="contact_wrap__form__box__select">
+                <optgroup value>
+                  <option value="プルダウンメニューで問い合わせ内容を選択" hidden class="contact_wrap__form__box__select__with">お問い合わせ内容を選択</option>
+                  <option value="太陽光発電システムの購入/見積もり" class="contact_wrap__form__box__select__with">太陽光発電システムの購入/見積もり</option>
+                  <option value="太陽光発電システムの商品について" class="contact_wrap__form__box__select__with">太陽光発電システムの商品について</option>
+                  <option value="太陽光発電システムの技術的な質問" class="contact_wrap__form__box__select__with">太陽光発電システムの技術的な質問</option>
+                  <option value="その他" class="contact_wrap__form__box__select__with">その他</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <!-- テキストボックス -->
+            <div class="contact_wrap__form__box">
+              <label for="name" class="contact_wrap__form__box__ttl">お名前（漢字）</label>
+              <input type="text" class="contact_wrap__form__box__input" name="お名前（漢字）" required="required" placeholder="お名前をご入力下さい">
+            </div>
+
+            <!-- テキストボックス（メール） -->
+            <div class="contact_wrap__form__box">
+              <label for="email" class="contact_wrap__form__box__ttl">メールアドレス</label>
+              <input type="email" class="contact_wrap__form__box__input" name="メールアドレス" required="required" placeholder="例）example@example.com">
+            </div>
+
+            <!-- テキストボックス（メッセージ） -->
+            <div class="contact_wrap__form__box __area">
+              <label for="message" class="contact_wrap__form__box__ttl">お問い合わせ内容</label>
+              <textarea name="お問い合わせ内容" class="contact_wrap__form__box__area" required="required" placeholder="お問い合わせ内容をご入力下さい"></textarea>
+            </div>
+
+            <!-- 送信ボタン -->
+            <button type="submit" class="btn contact-btn">送信する</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-wrap">
+        <!-- ロゴ -->
+        <div class="footer-wrap__logo">
+          <a href="../index.html">
+            <img src="../img/0.logo.png" alt="ロゴ画像">
+          </a>
+        </div>
+    
+        <!-- メニュー -->
+        <ul class="footer-wrap__list">
+          <li class="footer-wrap__list__item">
+            <a href="service.html">service</a>
+          </li>
+          <li class="footer-wrap__list__item">
+            <a href="about.html">about</a>
+          </li>
+          <li class="footer-wrap__list__item">
+            <a href="news.html">news</a>
+          </li>
+          <li class="footer-wrap__list__item">
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+    
+        <!-- SNS -->
+        <ul class="footer-wrap__sns">
+          <li class="footer-wrap__sns__icon1">
+            <a href="#">
+              <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </a>
+          </li>
+          <li class="footer-wrap__sns__icon2">
+            <a href="#">
+              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+          </li>
+        </ul>
+    
+        <!-- copy -->
+        <small class="footer-wrap__copyright">
+          ©Sunsphere.All Right Reserved.
+        </small>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQ・JSファイル読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+  </body>
+</html> 

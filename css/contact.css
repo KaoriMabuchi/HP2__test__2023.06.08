@@ -1,0 +1,147 @@
+.contact-wrap__txt {
+  margin-bottom: 3.125rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.contact_wrap__form {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact_wrap__form__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 1.875rem;
+}
+
+.contact_wrap__form__box.__area {
+  align-items: baseline;
+  margin-bottom: 6.25rem;
+}
+
+.contact_wrap__form__box__select,
+.contact_wrap__form__box__input,
+.contact_wrap__form__box__area {
+  height: 4.375rem;
+  width: 75.57%;
+  /*width: 740px;*/
+  padding-left: 10px;
+  font-size: 1.125rem;
+}
+
+.contact_wrap__form__box__select {
+  height: 4.375rem;
+  width: 76.9%;
+  /*width: 753px;*/
+  /* ★ 調整する必要あり ★ */
+}
+
+.contact_wrap__form__box__area {
+  height: 18.75rem;
+  /*width: 64.2%;*/
+  padding: 10px;
+  
+}
+
+.contact_wrap__form__box__ttl {
+  width: 24.5%;
+  height: 100%;
+  font-size: 1.125rem;
+  position: relative;
+  letter-spacing: 0.9px;
+}
+
+.contact_wrap__form__box__ttl::after {
+  content: "必須";
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  /*width: 20.5%;*/
+  width: 3.062rem;
+  line-height: 2.5;
+  font-size: 0.875rem;
+  color: #c72930;
+  border: 1px solid #c72930;
+}
+
+.contact-btn {
+  display: block;
+  color: #fff;
+  background: #0072C6;
+  cursor: pointer;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  border: solid 2.5px #0072C6;
+  
+}
+
+.contact-btn:hover {
+  color: #0072C6;
+  background: #fff;
+  transition: 0.75s;
+}
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1370px) {
+  .contact_wrap__form__box {
+    display: block;
+  }
+
+  .contact_wrap__form__box__ttl {
+    width: 100%;
+  }
+
+  .contact_wrap__form__box__ttl::after {
+    left: 100%;
+    transform: translateY(-50%) translateX(50%);
+  }
+
+  .contact_wrap__form__box__select,
+  .contact_wrap__form__box__input,
+  .contact_wrap__form__box__area {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+}
+
+
+/* レスポンシブ対応 --tab-- */
+@media screen and (max-width: 768px) {
+  .contact_wrap__form {
+    width: 100%;
+  }
+}
+
+/* レスポンシブ対応 --sp-- */
+@media screen and (max-width: 480px) {
+  .contact_wrap__form__box__area {
+    padding: 5px;
+  }
+
+  .contact_wrap__form__box.__area {
+    margin-bottom: 3.125rem;
+  }
+
+  .contact-wrap__txt {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  .contact_wrap__form__box__ttl::after {
+    line-height: 1.45;
+  }
+
+  .contact_wrap__form__box__select,
+  .contact_wrap__form__box__input,
+  .contact_wrap__form__box__area {
+    margin-top: 12px;
+  }
+}
